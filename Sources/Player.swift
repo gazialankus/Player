@@ -70,7 +70,7 @@ public enum BufferingState: Int, CustomStringConvertible {
     }
 }
 
-public protocol PlayerDelegate: class {s
+public protocol PlayerDelegate: class {
     func playerReady(player: Player)
     func playerPlaybackStateDidChange(player: Player)
     func playerBufferingStateDidChange(player: Player)
