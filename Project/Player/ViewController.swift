@@ -61,7 +61,9 @@ class ViewController: UIViewController, PlayerDelegate {
         self.view.addSubview(self.player.view)
         self.player.didMoveToParentViewController(self)
         
-        self.player.setUrl(videoUrl)
+        let contents = PlayerContents()
+        contents.setUrl(videoUrl)
+        self.player.playerContents = contents
         
         self.player.playbackLoops = true
         
